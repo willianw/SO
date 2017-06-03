@@ -251,6 +251,7 @@ extern struct trace_event_functions exit_syscall_print_funcs;
 #endif /* CONFIG_HAVE_SYSCALL_WRAPPERS */
 
 asmlinkage long sys_mycall(int i);
+asmlinkage long sys_process_status(int i);
 asmlinkage long sys_time(time_t __user *tloc);
 asmlinkage long sys_stime(time_t __user *tptr);
 asmlinkage long sys_gettimeofday(struct timeval __user *tv,
